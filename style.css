@@ -1,0 +1,156 @@
+/* Import Google Fonts */
+@import
+url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Body Style */
+body {
+font-family: 'Open Sans', sans-serif;
+color: #111111;
+background-image: url('https://www.kemdikbud.go.id/main/informasi-publik/logo-kemdikbudristek');
+line-height: 1.6;
+}
+
+img {
+    width: 25%;
+}
+/* Container */
+.container {
+width: 90%;
+max-width: 1200px;
+margin: 0 auto;
+}
+.containerdendy {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    }
+
+.containerdendy nav{
+    margin-right: 20px;
+    width: 100%;
+}
+
+
+.tabledendy {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Header */
+header { 
+background-color: #5a7dcf;
+color: #080808;
+padding: 20px 0;
+}
+
+header h1 {
+font-family: 'Roboto', sans-serif;
+font-size: 36px;
+text-align: left;
+}
+nav ul {
+list-style: none;
+margin-top:50px;
+text-align: right;
+
+}
+nav ul li {
+display: inline;
+margin-right: 20px;
+}
+nav ul li a {
+    color: #f3f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Apply transition on all properties */
+  }
+  
+  nav ul li a:hover {
+    color: #0b0c0c;
+  }
+/* Hero Section */
+.hero {
+background-color: #6eb2f6;
+color: #0b0a0b;
+padding: 50px 0;
+text-align: center;
+}
+.hero h2 {
+font-family: 'Roboto', sans-serif;
+font-size: 28px;
+}
+.hero p {
+font-size: 18px;
+}
+/* Content Section */
+.content {
+padding: 50px 0;
+text-align: center;
+}
+.content h3 {
+font-family: 'Roboto', sans-serif;
+font-size: 24px;
+color: #0b0a0a;
+}
+.content p {
+font-size: 16px;
+margin-top: 10px;
+color: #0b0b0b;
+}
+/* Footer */
+footer {
+background-color: #5d9ffa;
+color: #0e0e0d;
+text-align: center;
+padding: 20px 0;
+}
+footer p {
+margin: 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+header h1 {
+font-size: 28px;
+}
+.hero h2 {
+font-size: 24px;
+}
+.content h3 {
+font-size: 20px;
+}
+nav ul li {
+display: block;
+margin: 10px 0;
+}
+}
+/* Content Grid Layout */
+.content .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    }
+    .content .item h4 {
+    font-size: 20px;
+    color: #070707;
+    }
+    .content .item p {
+    font-size: 14px;
+    color: #0f1010;
+    }
+.content .item:hover {
+  background-color: #5d9ffa;
+  transform: scale(1.05); /* Slight scale on hover */
+}.content .item {
+  background-color: #5a7dcf;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  transition: all 0.4s ease; /* Apply transition on all properties */
+}
